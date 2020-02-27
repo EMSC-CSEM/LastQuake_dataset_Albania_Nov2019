@@ -90,7 +90,7 @@ earthquake parameters occurred at 01:51:00. The same datasets have been provided
 mainshock (see above). Note the LastQuake users were notified of the earthquake at 01:51:37 
 which led to a secondary peak in traffic.
 
-A [Mb 4.9 foreshock](https://www.emsc-csem.org/Earthquake/earthquake.php?id=807907)
+A [Mb 4.9 aftershock](https://www.emsc-csem.org/Earthquake/earthquake.php?id=807907)
 occurred an hour before the mainshock in Albania that was also detected by EMSC's crowdsource
 detection algorithms. It occurred at 2019-11-26T13:05:01.7 at 41.58N, 19.51E with a depth 
 of 12km. It was detected at 13:06:15 via an increase in users on the LastQake app and its 
