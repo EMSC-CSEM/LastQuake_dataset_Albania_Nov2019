@@ -21,6 +21,9 @@ At 02:55:40 a peak in the traffic to the EMSC websites was detected from Albania
 a detection due an increase in Tweets from Montenegro. In total 8 peaks were detected from
 the crowdsourced detection systems.
 
+Note that a notification was sent to LastQuake app users at 03:02:26 which may have affected 
+LastQuake user traffic - notifications normally lead to traffic peaks that need to be ignored.
+
 ***************************************************************************************************
 
 This repository contains datasets pertaining to the event:
@@ -74,6 +77,38 @@ This repository contains datasets pertaining to the event:
        * mdist - distance from epicentre to the closest seismic station (the smaller the better)
        * gap - the largest azimuthal gap between seismic stations from the point of view of the epicentre.
    
+
+Supplementary Earthquakes
+=======================
+
+A [Mb 4.4 foreshock](https://www.emsc-csem.org/Earthquake/earthquake.php?id=807728)
+occurred an hour before the mainshock in Albania that was also detected by EMSC's crowdsource
+detection algorithms. It occurred at 2019-11-26T01:47:56.5 at 41.37N, 19.42E with a depth 
+of 10km. It was detected at 01:48:30 via an increase in users on the LastQake app and its 
+location estimated was 30km from the current published epicentre. The first publication of 
+earthquake parameters occurred at 01:51:00. The same datasets have been provided as for the 
+mainshock (see above). Note the LastQuake users were notified of the earthquake at 01:51:37 
+which led to a secondary peak in traffic.
+
+A [Mb 4.9 foreshock](https://www.emsc-csem.org/Earthquake/earthquake.php?id=807907)
+occurred an hour before the mainshock in Albania that was also detected by EMSC's crowdsource
+detection algorithms. It occurred at 2019-11-26T13:05:01.7 at 41.58N, 19.51E with a depth 
+of 12km. It was detected at 13:06:15 via an increase in users on the LastQake app and its 
+location estimated was 33km from the current published epicentre. The first publication 
+of earthquake parameters occurred at 13:09:00. The same datasets have been provided as for 
+the mainshock (see above). Note the LastQuake users were notified of the earthquake at 13:11:19
+which could have affected LastQuake user traffic.
+
+A [Mb 4.5 aftershock](https://www.emsc-csem.org/Earthquake/earthquake.php?id=808588)
+occurred an hour before the mainshock in Albania that was also detected by EMSC's crowdsource
+detection algorithms. It occurred at 2019-11-28T23:00:44.7 at 41.41N, 19.58E with a depth 
+of 10km. It was detected at 23:01:10 via an increase in users on the EMSC website and at
+23:01:25 via user numbers of the LastQake app and its location estimated was 22km from the
+current published epicentre. The first publication of earthquake parameters occurred 
+at 23:04:00. The same datasets have been provided as for the mainshock (see above). Note the
+LastQuake users were notified of the earthquake at 23:05:00 and at 23:13:46 which could have
+affected LastQuake user traffic.
+
 
 
 

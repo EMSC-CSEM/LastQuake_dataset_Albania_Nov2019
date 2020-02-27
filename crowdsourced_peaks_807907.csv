@@ -1,0 +1,3 @@
+id,peakid,system,country,flynn_region,triggertime,peakstart,cs_lat,cs_lon,associated_evid,evid_pubtime0,sep_emsc_cs1,triggerdelay,peakstartdelay
+18849,CHleku,Website,alb,Albania,2019-11-26T13:05:40.000000,2019-11-26T13:05:20.000000,41.35,19.85,807907.00,2019-11-26T13:10:00.000000,38.25,38.30,18.30
+18852,Ugpq_K,LastQuake,alb,Albania,2019-11-26T13:06:15.000000,2019-11-26T13:05:45.000000,41.37,19.79,807907.00,2019-11-26T13:10:00.000000,33.05,73.30,43.30
