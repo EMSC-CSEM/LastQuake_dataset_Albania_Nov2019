@@ -26,17 +26,19 @@ the crowdsourced detection systems.
 This repository contains datasets pertaining to the event:
 
 +   **geolocated_app_users_807751.csv** - LastQuake user sessions worldwide that started between 
-    02:50:00 and 02:57:00 for those users that had geolocation activated (and that had not used
+    02:50:00 and 03:15:00 for those users that had geolocation activated (and that had not used
     their LastQuake within the previous half an hour - standard signal filtering that we apply
-    to our traffic data).
+    to our traffic data). However, after 02:57:00 there are gaps in the data due to our systems
+    struggling under the traffic.
 
 +   **all_sessions_807751.csv** - all Website and LastQuake user sessions worldwide that started between 
-    02:50:00 and 02:57:00. Website users are geolocated via their IP address, this works well for
+    02:50:00 and 03:15:00. Website users are geolocated via their IP address, this works well for
     desktop users but not very well for website users. Many LastQuake users have their phone's
     geolocation activated and this is far more accurate when available. Various filters are used
     to increase the signal to noise. For instance website visitors referred from sites other than
     search engines are ignored and only visitors who haven't used the site within 30 minutes (to
-    eliminate regular users). 
+    eliminate regular users). However, after 02:57:00 there are gaps in the data due to our systems
+    struggling under the traffic.
 
 +   **crowdsourced_peaks_807751.csv** - traffic peaks detected at the EMSC via crowdsourcing for
     this event. Description for selected columns:
