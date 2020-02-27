@@ -61,7 +61,7 @@ This repository contains datasets pertaining to the event:
     They may also be corrected manually by an operator over the next few days particularly for
     a large earthquake. Description for selected columns:
        * evid - all EMSC published earthquakes are given an ID
-       * pubtime - time that each version was published
+       * pubtime - time that each version was published (sometimes only to the nearest minute)
        * oritime - origin time of the earthquake
        * lat - latitude of the earthquake's epicenter (or hypocenter)
        * lon - longitude of the earthquake's epicenter (or hypocenter)
