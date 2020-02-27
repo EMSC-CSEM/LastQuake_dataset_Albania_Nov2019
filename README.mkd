@@ -2,14 +2,14 @@
 Visitor Sessions for EMSC Services Following the M6.4 in Albania on 2019-11-26 02:54:11
 ===============================================================================
 
-The EMSC runs both an app called LastQuake and websites (desktop and mobile) that publish
-earthquake data for the public. After earthquakes that affect population centres, it is so
-common for the services to see strong increases in user traffic that the EMSC has developped
-systems to detect these peaks.
+The EMSC runs both an app called LastQuake and websites ([desktop](https://www.emsc-csem.org)
+and [mobile](https://m.emsc.eu/)) that publish earthquake data for the public. After 
+earthquakes that affect population centres, it is so common for the services to see strong 
+increases in user traffic that the EMSC has developped systems to detect these peaks.
 
-The Mw 6.4 earthquake in Albania occurred at 2019-11-26T02:54:11. It's epicentre was at 
-41.38N 19.47E and at 10km depth. Parameters for the earthquake were first officially published
-by the EMSC at 02:59:00.
+The [**Mw 6.4** earthquake in **Albania** occurred at **2019-11-26T02:54:11**](https://www.emsc-csem.org/Earthquake/earthquake.php?id=807751)
+It's epicentre was at 41.38N 19.47E and it occurred at 10km depth. Parameters for the 
+earthquake were first officially published by the EMSC at 02:59:00.
 
 The earthquake was also detected by surges in traffic to the EMSC's services. Traffic is
 segregated by country to increase signal to noise. The earliest such detection occurred at
@@ -21,54 +21,56 @@ At 02:55:40 a peak in the traffic to the EMSC websites was detected from Albania
 a detection due an increase in Tweets from Montenegro. In total 8 peaks were detected from
 the crowdsourced detection systems.
 
+***************************************************************************************************
+
 This repository contains datasets pertaining to the event:
 
-geolocated_app_users_807751.csv - LastQuake user sessions worldwide that started between 
-02:50:00 and 02:57:00 for those users that had geolocation activated (and that had not used
-their LastQuake within the previous half an hour - standard signal filtering that we apply
-to our traffic data).
++   **geolocated_app_users_807751.csv** - LastQuake user sessions worldwide that started between 
+    02:50:00 and 02:57:00 for those users that had geolocation activated (and that had not used
+    their LastQuake within the previous half an hour - standard signal filtering that we apply
+    to our traffic data).
 
-all_sessions_807751.csv - all Website and LastQuake user sessions worldwide that started between 
-02:50:00 and 02:57:00. Website users are geolocated via their IP address, this works well for
-desktop users but not very well for website users. Many LastQuake users have their phone's
-geolocation activated and this is far more accurate when available. Various filters are used
-to increase the signal to noise. For instance website visitors referred from sites other than
-search engines are ignored and only visitors who haven't used the site within 30 minutes (to
-eliminate regular users). 
++   **all_sessions_807751.csv** - all Website and LastQuake user sessions worldwide that started between 
+    02:50:00 and 02:57:00. Website users are geolocated via their IP address, this works well for
+    desktop users but not very well for website users. Many LastQuake users have their phone's
+    geolocation activated and this is far more accurate when available. Various filters are used
+    to increase the signal to noise. For instance website visitors referred from sites other than
+    search engines are ignored and only visitors who haven't used the site within 30 minutes (to
+    eliminate regular users). 
 
-crowdsourced_peaks_807751.csv - traffic peaks detected at the EMSC via crowdsourcing for
-this event. Description for selected columns:
-   * country - country code (ISO 3166-1 alpha-3)
-   * triggertime - time that system first detected an increase in traffic
-   * peakstart - estimation of time that traffic peak began
-   * cs_lat - estimated latitude for centre of traffic increase
-   * cs_lon - estimated longitude for centre of traffic increase
-   * associated_evid - all EMSC published earthquakes are given an ID
-   * evid_pubtime0 - earliest time that earthquake was published on the EMSC earthquake
-   * assoctime - time that traffic peaks were automatically associated to an earthquake 
-   * sep_emsc_cs1 - distance between associated earthquake's epicentre and estimated location 
-                    of traffic peak
++   **crowdsourced_peaks_807751.csv** - traffic peaks detected at the EMSC via crowdsourcing for
+    this event. Description for selected columns:
+       * country - country code (ISO 3166-1 alpha-3)
+       * triggertime - time that system first detected an increase in traffic
+       * peakstart - estimation of time that traffic peak began
+       * cs_lat - estimated latitude for centre of traffic increase
+       * cs_lon - estimated longitude for centre of traffic increase
+       * associated_evid - all EMSC published earthquakes are given an ID
+       * evid_pubtime0 - earliest time that earthquake was published on the EMSC earthquake
+       * assoctime - time that traffic peaks were automatically associated to an earthquake 
+       * sep_emsc_cs1 - distance between associated earthquake's epicentre and estimated location 
+                        of traffic peak
 
-EMSC_published_params_807751.csv - earthquake parameters are not published only once
-instead they are updated and refined automatically over several minutes as new data arrives.
-They may also be corrected manually by an operator over the next few days particularly for
-a large earthquake. Description for selected columns:
-   * evid -
-   * pubtime -
-   * oritime - 
-   * lat - latitude of the earthquake's epicenter (or hypocenter)
-   * lon - longitude of the earthquake's epicenter (or hypocenter)
-   * depth - earthquakes occur within the earth's crust (sometimes 100s km deep) and so
-             a depth is needed to give the hypocenter of an earthquake
-   * magtype - different scales are used depending upon how an earthquake's magnitude is 
-               calculated but they are roughly comparable
-   * mag - earthquake magnitude
-   * automan - parameters are either 'A' automatic or 'M' manual
-   * net34 - declares the origin of a set of parameters. EMSC's primary purpose is to 
-             collect parameters from institutes
-   * nsta - number of stations used for the location calculation
-   * mdist - distance from epicentre to the closest seismic station (the smaller the better)
-   * gap - the largest azimuthal gap between seismic stations from the point of view of the epicentre.
++   **EMSC_published_params_807751.csv** - earthquake parameters are not published only once
+    instead they are updated and refined automatically over several minutes as new data arrives.
+    They may also be corrected manually by an operator over the next few days particularly for
+    a large earthquake. Description for selected columns:
+       * evid - all EMSC published earthquakes are given an ID
+       * pubtime - time that each version was published
+       * oritime - origin time of the earthquake
+       * lat - latitude of the earthquake's epicenter (or hypocenter)
+       * lon - longitude of the earthquake's epicenter (or hypocenter)
+       * depth - earthquakes occur within the earth's crust (sometimes 100s km deep) and so
+                 a depth is needed to give the hypocenter of an earthquake
+       * magtype - different scales are used depending upon how an earthquake's magnitude is 
+                   calculated but they are roughly comparable
+       * mag - earthquake magnitude
+       * automan - parameters are either 'A' automatic or 'M' manual
+       * net34 - declares the origin of a set of parameters. EMSC's primary purpose is to 
+                 collect parameters from institutes
+       * nsta - number of stations used for the location calculation
+       * mdist - distance from epicentre to the closest seismic station (the smaller the better)
+       * gap - the largest azimuthal gap between seismic stations from the point of view of the epicentre.
    
 
 
